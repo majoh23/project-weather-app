@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App ⛈️</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app">
         <header>
-            <h1>Weather App ⛈️</h1>
+            <h1>Weather App</h1>
         </header>
         <main>
             <div class="search">
@@ -20,13 +20,24 @@
                 <h2 id="locationName">Location</h2>
                 <div class="weather-info">
                     <div class="temperature">
-                        <span id="temperature">0°C</span>
+                        <span id="temperature"></span>
                     </div>
                     <div class="description">
-                        <span id="weatherDescription">Clear sky</span>
+                        <span id="weatherIcon"></span> <span id="weatherDescription"></span>
                     </div>
                     <div class="wind-speed">
-                        Wind Speed: <span id="windSpeed">0 m/s</span>
+                        Wind Speed: <span id="windSpeed"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="sun-segment">
+                <h2>Sun Up and Sun Down</h2>
+                <div class="sun-info">
+                    <div class="sunrise">
+                        <img src="./images/sunrise.png"><span id="sunriseTime"></span>
+                    </div>
+                    <div class="sunset">
+                        <img src="./images/sunset.png"><span id="sunsetTime"></span>
                     </div>
                 </div>
             </div>
